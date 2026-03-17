@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triage AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Triage AI</h1>
+
+    <textarea id="input" placeholder="Describe emergency..."></textarea>
+
+    <button onclick="analyze()">Analyze</button>
+
+    <div class="output">
+        <h3>Analysis</h3>
+        <p id="result"></p>
+
+        <h3>Metrics</h3>
+        <p id="tokens"></p>
+        <p id="latency"></p>
+
+        <canvas id="chart"></canvas>
+
+        <h3>Pruned Context</h3>
+        <p id="pruned"></p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
